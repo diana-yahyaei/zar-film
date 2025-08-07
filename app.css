@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-attachment: scroll;
+}
+
+body {
+  color: #fff;
+  background-color: #000000;
+}
+span {
+  color: #e98309;
+  margin: 5px;
+}
+.back {
+  position: relative;
+
+  height: 60%;
+}
+.back img {
+  width: 100vw;
+}
+.container {
+  position: absolute;
+  top: 5%;
+  font-size: 30px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 85%;
+  margin-top: 70px;
+}
+.container img {
+  width: 100%;
+  margin: 0 25px 0;
+}
+.list {
+  height: 75vh;
+  width: 95vw;
+
+  border-radius: 10px;
+
+  background-image: url(https://binande.info/wp-content/themes/zarfilm185/images/app_langing_btns_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.texts {
+  position: absolute;
+  right: 40%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  width: 300px;
+  color: white;
+}
+.options {
+  padding-top: 100px;
+  justify-content: center;
+  justify-items: center;
+  gap: 40px;
+  grid-template-columns: repeat(6, 1fr);
+
+  display: grid;
+}
+.lino,
+.windo,
+.mack,
+.tv,
+.iphon,
+.and {
+  font-size: 20px;
+  padding-top: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background-color: #000000;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+svg {
+  height: 50px;
+  width: 50px;
+}
+.lino:hover {
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
+}
+
+.windo:hover {
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
+}
+
+.mack:hover {
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
+}
+
+.tv:hover {
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
+}
+
+.iphon:hover {
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
+}
+
+.and:hover {
+  background-color: rgb(131, 148, 110);
+  border: 2px solid rgb(131, 148, 110);
+}
+p {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  /* margin-bottom: 30px; */
+}
+#p {
+  margin: 100px;
+  font-weight: bold;
+  font-size: 30px;
+}
+/* .quastions {
+  background-image: url(https://binande.info/wp-content/themes/zarfilm185/images/app_langing_faq_bg.jpg?1);
+
+  background-repeat: no-repeat;
+  background-size: 100vw;
+} */
+.dropdown {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.flash {
+  width: 10px;
+  height: 10px;
+}
+
+.dropdown-btn {
+  width: 80vw;
+  margin: auto;
+  height: 50px;
+  color: white;
+  padding: auto;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-btn p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.mark {
+  background-color: #e98309;
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.dropdown-content {
+  width: 80vw;
+  height: 100px;
+  margin: auto;
+  font-size: 15px;
+  padding: 0 15px;
+
+  max-height: 0;
+  overflow: hidden;
+  color: white;
+  transition: max-height 0.3s ease-out;
+  background: #10151b;
+}
+
+.dropdown-content p {
+  padding: 30px 20px;
+  font-size: 15px;
+  color: white;
+  text-align: right;
+  justify-content: right;
+}
+
+.dropdown.active .dropdown-content {
+  max-height: 200px;
+  padding: 10px 15px;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  transition: transform 0.3s;
+  font-size: 12px;
+  margin-right: 5px;
+}
