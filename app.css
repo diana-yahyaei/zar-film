@@ -7,6 +7,7 @@
 
 body {
   color: #fff;
+
   background-color: #000000;
 }
 span {
@@ -39,10 +40,12 @@ span {
 }
 .list {
   height: 75vh;
-  width: 95vw;
-
+  width: 96vw;
+  /* position: absolute;
+  z-index: 1; */
+  z-index: 2;
   border-radius: 10px;
-
+  position: relative;
   background-image: url(https://binande.info/wp-content/themes/zarfilm185/images/app_langing_btns_bg.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -82,7 +85,7 @@ span {
   border: 2px solid rgb(0, 0, 0);
 }
 
-svg {
+.svg {
   height: 50px;
   width: 50px;
 }
@@ -115,29 +118,55 @@ svg {
   background-color: rgb(131, 148, 110);
   border: 2px solid rgb(131, 148, 110);
 }
-p {
+.p {
   text-align: center;
   justify-content: center;
   display: flex;
   /* margin-bottom: 30px; */
 }
 #p {
-  margin: 100px;
   font-weight: bold;
   font-size: 30px;
+  margin-bottom: 100px;
+  text-align: center;
 }
-/* .quastions {
+
+/* background-image: url(https://binande.info/wp-content/themes/zarfilm185/images/app_langing_faq_bg.jpg?1);
+  background-color: aqua; 
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  */
+/* position: relative;
+  top: 400px; */
+
+/* position: absolute;
+  bottom: 10px;
+}
+/*  {
   background-image: url(https://binande.info/wp-content/themes/zarfilm185/images/app_langing_faq_bg.jpg?1);
 
   background-repeat: no-repeat;
   background-size: 100vw;
 } */
+
+.bgc {
+  width: 100vw;
+  height: 600px;
+  background-image: url(https://binande.info/wp-content/themes/zarfilm185/images/app_langing_faq_bg.jpg?1);
+  position: absolute;
+  top: 1450px;
+  background-repeat: no-repeat;
+  background-size: 100vw 500px;
+}
 .dropdown {
   width: 80vw;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-radius: 20px;
-  overflow: hidden;
+  /* position: relative;
+  top: 400px; */
+
+  z-index: 3;
 }
 
 .flash {
@@ -146,6 +175,7 @@ p {
 }
 
 .dropdown-btn {
+  z-index: 4;
   width: 80vw;
   margin: auto;
   height: 50px;
@@ -181,7 +211,7 @@ p {
   margin: auto;
   font-size: 15px;
   padding: 0 15px;
-
+  z-index: 3;
   max-height: 0;
   overflow: hidden;
   color: white;
@@ -195,6 +225,7 @@ p {
   color: white;
   text-align: right;
   justify-content: right;
+  z-index: 3;
 }
 
 .dropdown.active .dropdown-content {

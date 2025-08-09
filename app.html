@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>application</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <div class="back">
@@ -12,7 +12,7 @@
         src="https://binande.info/wp-content/themes/zarfilm185/images/landing_header_bg.jpg"
       />
       <div class="container">
-        <p>را در هرجا و هر زمان تماشا کنید<span> زر فیلم </span></p>
+        <p class="p">را در هرجا و هر زمان تماشا کنید<span> زر فیلم </span></p>
 
         <img src="images/app_landing.png" />
       </div>
@@ -25,6 +25,7 @@
           <div class="lino">
             <div>
               <svg
+                class="svg"
                 width="60"
                 height="61"
                 viewBox="0 0 60 61"
@@ -40,10 +41,11 @@
                 ></path>
               </svg>
             </div>
-            <p>لینوکس (به زودی)</p>
+            <p class="p">لینوکس (به زودی)</p>
           </div>
           <div class="windo">
             <svg
+              class="svg"
               width="60"
               height="61"
               viewBox="0 0 60 61"
@@ -58,10 +60,11 @@
                 stroke-linejoin="round"
               ></path>
             </svg>
-            <p>ویندوز</p>
+            <p class="p">ویندوز</p>
           </div>
           <div class="mack">
             <svg
+              class="svg"
               width="60"
               height="60"
               viewBox="0 0 60 60"
@@ -98,10 +101,11 @@
                 stroke-width="3"
               ></path>
             </svg>
-            <p>مک</p>
+            <p class="p">مک</p>
           </div>
           <div class="tv">
             <svg
+              class="svg"
               width="60"
               height="61"
               viewBox="0 0 60 61"
@@ -116,10 +120,11 @@
                 stroke-linejoin="round"
               ></path>
             </svg>
-            <p>اندروید تی وی</p>
+            <p class="p">اندروید تی وی</p>
           </div>
           <div class="iphon">
             <svg
+              class="svg"
               width="60"
               height="61"
               viewBox="0 0 60 61"
@@ -141,10 +146,11 @@
                 stroke-linejoin="round"
               ></path>
             </svg>
-            <p>ایفون(به زودی)</p>
+            <p class="p">ایفون(به زودی)</p>
           </div>
           <div class="and">
             <svg
+              class="svg"
               width="60"
               height="61"
               viewBox="0 0 60 61"
@@ -159,16 +165,17 @@
                 stroke-linejoin="round"
               ></path>
             </svg>
-            <p>اندروید موبایل</p>
+            <p class="p">اندروید موبایل</p>
           </div>
         </div>
       </div>
     </div>
-    <p id="p">سوالات متداول</p>
-    <div class="quastions">
+    <div class="bgc">
+      <p id="p">سوالات متداول</p>
+
       <div class="dropdown">
         <button class="dropdown-btn">
-          <p>
+          <p class="p">
             محتوا سانسور میشن؟
             <img
               class="mark"
@@ -183,7 +190,7 @@
           </div>
         </button>
         <div class="dropdown-content">
-          <p>
+          <p class="p">
             هیچ یک از محتوا اعم از دوبله و زبان اصلی به هیچ عنوان سانسور شده
             نیست و رسالت زرفیلم این است که محتوا به صورت اورجینال بدست کاربران
             برسد
@@ -192,7 +199,7 @@
       </div>
       <div class="dropdown">
         <button class="dropdown-btn">
-          <p>
+          <p class="p">
             اپلیکیشن و نرم افزارها فیلتر است؟
             <img
               class="mark"
@@ -207,7 +214,7 @@
           </span>
         </button>
         <div class="dropdown-content">
-          <p>
+          <p class="dropdown-active">
             هیچ یک از نرم افزارها و اپلیکیشن ها فیلتر نمی باشد و برای نصب و
             استفاده نیاز به فیلتر شکن نمی باشد
           </p>
@@ -215,6 +222,10 @@
       </div>
     </div>
 
+    <!-- <img
+      class="bgc-pic"
+      src="https://binande.info/wp-content/themes/zarfilm185/images/app_langing_faq_bg.jpg?1"
+    /> -->
     <script>
       document.querySelectorAll(".dropdown-btn").forEach((button) => {
         button.addEventListener("click", () => {
