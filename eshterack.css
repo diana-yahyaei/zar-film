@@ -3,6 +3,232 @@
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  background-color: black;
+  font-family: "Vazir", sans-serif;
+  color: white;
+  margin: 0;
+  position: sticky;
+  top: 1px;
+  z-index: 4;
+  border-top: 4px solid #b56b17;
+}
+.search {
+  background-color: #0c0c0c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  right: -50px;
+}
+.drop {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  margin-left: 20px;
+  background-color: #b56b17;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  position: relative;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: -100px;
+  background-color: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 20px;
+  width: 240px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.drop:hover .menu {
+  display: block;
+}
+
+.menu h4 {
+  margin: 0 0 1rem 0;
+  font-weight: normal;
+}
+
+.menu a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu .special {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crown {
+  font-size: 18px;
+}
+header {
+  background-color: #000;
+  margin: 0;
+  font-family: "Vazir", sans-serif;
+
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 40px;
+  padding: 1rem 2rem;
+  background-color: #0f0f0f;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-item-wrapper {
+  position: relative;
+}
+.drop {
+  margin-right: auto;
+}
+
+.nav-item {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 25px 30px;
+  width: 950px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.nav-item-wrapper:hover .mega-menu {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 32%;
+}
+
+.column a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.column a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 16px;
+  background-color: orange;
+}
+
+.column span {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.highlight {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  color: white;
+}
+
+.icon-btn {
+  background-color: #091321;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-item-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-item {
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  background-color: #0b1829ee;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.mega-menu.open {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  font-size: 16px;
+  font-weight: bold;
+}
+.column {
+  padding: 15px;
+}
+.menu {
+  display: none;
+}
+.drop:hover .menu {
+  display: block;
+}
+
 /*@font-face {
   font-family: yekan;
   src: url("font/BYekan+.ttf") format("truetype");
@@ -20,21 +246,23 @@ body {
 }
 .note {
   text-align: center;
-  width: 95%;
+  width: 90%;
   color: #fff;
   padding-top: 10px;
   background-color: #910909;
   border-radius: 20px;
   height: 7vh;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .info {
   display: flex;
   justify-content: space-evenly;
-  width: 95%;
-  background-color: rgba(29, 34, 45);
-
+  width: 90%;
+  background-color: rgb(23, 27, 36);
+  box-shadow: 2px 2px #0c0c0c;
   border-radius: 20px;
-  height: 80vh;
+  height: 75vh;
   align-items: center;
 }
 .helicopter,
@@ -109,7 +337,7 @@ strong {
   width: 80px;
   color: white;
   font-size: 20px;
-  padding-bottom: 5px;
+  padding-top: 3px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -189,79 +417,8 @@ strong {
   color: #eb8307;
   background-color: black;
 }
-@media screen and (max-width: 600px) {
-  .info {
-    flex-wrap: wrap;
 
-    height: auto;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .helicopter,
-  #vip,
-  #ship,
-  .submarine {
-    width: 90%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  .last-price {
-    font-size: 30px;
-  }
-  #ship {
-    height: 50%;
-  }
-  .price {
-    display: flex;
-    text-align: center;
-    justify-content: start;
-    align-items: center;
-    margin-top: -70px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-  }
-  .icon,
-  #icon-one,
-  #icon {
-    margin-top: 30px;
-
-    margin-left: 50%;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-  }
-  .icon img,
-  #icon img,
-  #icon-one img {
-    width: 65px;
-    height: 60px;
-
-    margin-left: 50%;
-  }
-
-  .time {
-    width: 85px;
-    height: 50px;
-    margin-top: -75px;
-    margin-right: -100px;
-  }
-
-  .suggest {
-    padding-bottom: 30px;
-    left: 30%;
-  }
-  .buy,
-  #buy {
-    margin-bottom: 10px;
-    height: 50px;
-  }
-}
 .footer {
-  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
@@ -336,12 +493,14 @@ strong {
   color: #eb8307;
 }
 .footer svg {
-  height: 20px;
+  height: 25px;
   transition: 0.3s ease-in-out;
-  width: 20px;
+  width: 25px;
   border-radius: 50%;
 }
-
+.footer svg:hover {
+  background-color: #eb8307;
+}
 
 .footer-download img {
   height: 20px;
