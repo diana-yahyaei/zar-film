@@ -4,7 +4,173 @@
   box-sizing: border-box;
   background-attachment: scroll;
 }
+/*---------------------------------------
+body {
+  background-color: #1e2a1f;
+  font-family: "Vazir", sans-serif;
+  color: white;
+}
 
+/* ساختار دکمه و منو 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  background-color: #b56b17;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  background-color: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 20px;
+  width: 240px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .menu h4 {
+  margin: 0 0 1rem 0;
+  font-weight: normal;
+} */
+
+/* .menu a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+} */
+/* .menu .special {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+} */
+
+/* .crown {
+  font-size: 18px;
+} */
+/* body {
+  background-color: #000;
+  margin: 0;
+  font-family: "Vazir", sans-serif;
+  direction: rtl;
+  color: white;
+} */
+
+/* .navbar {
+  display: flex;
+  gap: 40px;
+  padding: 1rem 2rem;
+  background-color: #0f0f0f;
+  position: relative;
+  z-index: 10;
+} */
+/* 
+.nav-item-wrapper {
+  position: relative;
+}
+
+
+/* آیتم منو 
+.nav-item {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* منوی مخفی 
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 25px 30px;
+  width: 950px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+/* فقط موقع hover روی دسته‌بندی‌ها باز بشه 
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+ .column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 32%;
+}
+
+.column a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 16px;
+  background-color: orange;
+}
+
+.column span {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.highlight {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  color: orange;
+}
+
+.icon-btn {
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+---------------------------------------*/
 body {
   color: #fff;
 
@@ -241,4 +407,79 @@ span {
   transition: transform 0.3s;
   font-size: 12px;
   margin-right: 5px;
+}
+.footer {
+  margin-top: 600px;
+  z-index: 3;
+  background: #0b1829ee;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-right a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.2s;
+  /* position: relative; */
+}
+.footer:hover {
+  color: rgb(245, 16, 16);
+}
+.footer-right a:last-child {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.footer-download {
+  background: #096b07;
+  border-radius: 20px;
+  padding: 4px 14px 4px 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 30px;
+  box-shadow: 0 1px 7px #07812e;
+  border: none;
+  cursor: pointer;
+}
+.footer-download i {
+  font-size: 18px;
+  margin-left: 6px;
+}
+.footer-download i:hover {
+  color: #e98309;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-social {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #0b1829ee;
+  font-size: 20px;
+  box-shadow: 0 1px 5px rgba(1, 50, 7, 0.06);
+  margin-left: 3px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.footer-social:hover {
+  background: #ff9100;
+  color: #fff;
 }
