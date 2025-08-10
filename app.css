@@ -431,8 +431,8 @@ span {
   transition: color 0.2s;
   /* position: relative; */
 }
-.footer:hover {
-  color: rgb(245, 16, 16);
+.footer a:hover {
+  color: #e98309;
 }
 .footer-right a:last-child {
   margin-left: 0;
@@ -464,6 +464,7 @@ span {
   align-items: center;
   gap: 10px;
 }
+
 .footer-social {
   display: inline-flex;
   width: 32px;
