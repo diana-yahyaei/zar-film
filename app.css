@@ -12,7 +12,7 @@ header {
   position: sticky;
   top: 1px;
   z-index: 4;
-  width: 100%;
+  width: 100vw;
   border-top: 4px solid #b56b17;
 }
 .search {
@@ -230,10 +230,13 @@ body {
 .drop:hover .menu {
   display: block;
 }
-
+html {
+  scrollbar-width: none;
+}
 body {
   color: #fff;
   background-color: black;
+  scrollbar-width: none;
 }
 span {
   color: #e98309;
@@ -241,7 +244,7 @@ span {
 }
 .back {
   position: relative;
-
+  width: 100vw;
   height: 60%;
 }
 .back img {
@@ -251,7 +254,7 @@ span {
   position: absolute;
   top: 5%;
   font-size: 30px;
-
+  width: 100vw;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -260,12 +263,12 @@ span {
   margin-top: 70px;
 }
 .container img {
-  width: 100%;
+  width: 95%;
   margin: 0 25px 0;
 }
 .list {
   height: 75vh;
-  width: 96vw;
+  width: 95vw;
   /* position: absolute;
   z-index: 1; */
   z-index: 2;
