@@ -162,7 +162,7 @@ header {
 }
 
 .highlight {
-  margin-top: 1rem;
+  margin-top: 100px;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: bold;
@@ -252,8 +252,8 @@ body {
   background-color: #910909;
   border-radius: 20px;
   height: 7vh;
-  margin-top: 30px;
-  margin-bottom: 15px;
+
+  /* margin-bottom: 15px; */
 }
 .info {
   display: flex;
@@ -262,15 +262,17 @@ body {
   background-color: rgb(23, 27, 36);
   box-shadow: 2px 2px #0c0c0c;
   border-radius: 20px;
-  height: 75vh;
+  height: 62vh;
   align-items: center;
+  margin-bottom: 55px;
 }
 .helicopter,
 #vip,
 #ship,
 .submarine {
-  height: 70%;
+  height: 80%;
   width: 20vw;
+  padding-bottom: 10px;
   border: 1px #eb8307;
   border-radius: 20px;
   background-color: black;
@@ -280,9 +282,10 @@ body {
   gap: 10px;
 }
 #ship {
-  height: 60%;
+  height: 70%;
   gap: 15px;
-  padding-bottom: 40px;
+
+  /* padding-bottom: 50px; */
 }
 #vip {
   position: relative;
@@ -308,18 +311,18 @@ body {
 }*/
 .icon img {
   height: 80%;
-  margin-top: 35px;
+  margin-top: 20px;
   width: 75%;
 }
 #icon img {
-  height: 70%;
-  margin-top: 40px;
+  height: 60%;
+  margin-top: 30px;
   margin-bottom: 10px;
   width: 65%;
 }
 #icon-one img {
   height: 75%;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
   width: 70%;
 }
@@ -343,12 +346,13 @@ strong {
   justify-content: center;
   display: flex;
   gap: 5px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .last-price {
   display: inline-block;
   position: relative;
+  margin-bottom: 10px;
   padding: 0 10px;
   font-size: 25px;
   color: #fff;
