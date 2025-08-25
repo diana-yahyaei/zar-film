@@ -236,7 +236,6 @@ html {
 body {
   color: #fff;
   background-color: black;
-  scrollbar-width: none;
 }
 span {
   color: #e98309;
@@ -244,7 +243,7 @@ span {
 }
 .back {
   position: relative;
-  width: 100vw;
+  width: 85vw;
   height: 60%;
 }
 .back img {
@@ -263,8 +262,7 @@ span {
   margin-top: 70px;
 }
 .container img {
-  width: 95%;
-  margin: 0 25px 0;
+  width: 90%;
 }
 .list {
   height: 75vh;
@@ -485,6 +483,7 @@ span {
   padding: 0 32px;
   z-index: 100;
   margin-top: 500px;
+  width: 100vw;
 }
 .footer-right {
   display: flex;
